@@ -23,7 +23,7 @@ namespace PolimorfismoExercicioDois.Entities
             return Name
                 + " (used) $ "
                 + Price.ToString("F2", CultureInfo.InvariantCulture)
-                + "(Manufacture date: "
+                + " (Manufacture date: "
                 + ManuFactureDate.ToString("dd/MM/yyyy")
                 + ")";
         }

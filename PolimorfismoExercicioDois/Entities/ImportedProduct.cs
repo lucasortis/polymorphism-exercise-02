@@ -19,7 +19,9 @@ namespace PolimorfismoExercicioDois.Entities
 
         public override string PriceTag()
         {
-            return base.PriceTag()
+            return Name
+                + " $ "
+                + TotalPrice().ToString("F2", CultureInfo.InvariantCulture)
                 + " (Customs fee: $ "
                 + CustomsFee.ToString("F2", CultureInfo.InvariantCulture)
                 + ")";
